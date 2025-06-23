@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG Creature Search App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>RPG Creature Search App</h1>
+    <main class="app">
+      <label class="search-text" for="search-input"
+        >Search for Creature Name or ID:</label
+      >
+      <div>
+        <input id="search-input" class="search-input" type="text" required />
+        <button type="submit" id="search-button" class="search-button">
+          Search
+        </button>
+      </div>
+
+      <div class="creature-details-container">
+        <div>
+          <strong id="creature-name"></strong>
+          <p id="creature-id"></p>
+          <div class="width-and-height-container">
+            <p id="weight" class="weight"></p>
+            <p id="height" class="height"></p>
+          </div>
+
+          <div class="types-container" id="types"></div>
+        </div>
+
+        <div class="creature-strength" id="creature-strength"></div>
+      </div>
+
+      <div class=".details-container">
+        <div class="base-and-stats-container">
+          <div class="base"><strong>Base</strong></div>
+          <div class="stats"><strong>Stats</strong></div>
+        </div>
+        <div class="base-and-stats-container">
+          <div class="base hp">HP:</div>
+          <div id="hp" class="stats"></div>
+        </div>
+        <div class="base-and-stats-container">
+          <div class="base">Attack:</div>
+          <div id="attack" class="stats"></div>
+        </div>
+        <div class="base-and-stats-container">
+          <div class="base">Defense:</div>
+          <div id="defense" class="stats"></div>
+        </div>
+        <div class="base-and-stats-container">
+          <div class="base">Sp. Attack:</div>
+          <div id="special-attack" class="stats"></div>
+        </div>
+        <div class="base-and-stats-container">
+          <div class="base">Sp. Defense:</div>
+          <div id="special-defense" class="stats"></div>
+        </div>
+        <div class="base-and-stats-container">
+          <div class="base">Speed:</div>
+          <div id="speed" class="stats"></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
