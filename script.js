@@ -17,7 +17,6 @@ const fetchData = async () => {
     try {
         const res = await fetch(creaturesUrl);
         const data = await res.json();
-        console.log(data);
         dataArr = data;
     } catch (err) {
         console.log(err);
